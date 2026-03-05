@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2 — CSS Layout (Solution)</title>
+  <style>
+
+    /* ---- Reset ---- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #222;
+    }
+
+    /* =============================================
+       PART A — Centering a div
+    ============================================= */
+    .centering-demo {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;   /* horizontal */
+      align-items: center;       /* vertical */
+    }
+
+    .centered-box {
+      width: 300px;
+      height: 200px;
+      background: #1a1a2e;
+      color: white;
+      font-size: 1.2rem;
+
+      /* Center the text inside the box */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+
+    /* =============================================
+       PART B — Card Deck
+    ============================================= */
+    .card-deck-section {
+      padding: 3rem 2rem;
+    }
+
+    .card-deck-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      color: #1a1a2e;
+    }
+
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      width: 220px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1rem;
+      color: #1a1a2e;
+    }
+
+    .card-body p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- PART A: Centering -->
+  <section class="centering-demo" aria-label="Centering demonstration">
+    <div class="centered-box">I am centered</div>
+  </section>
+
+  <!-- PART B: Card Deck -->
+  <section class="card-deck-section">
+    <h2>Classic Novels</h2>
+    <div class="card-deck">
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/book1/400/280" alt="Decorative cover image for In Search of Lost Time">
+        <div class="card-body">
+          <h3>In Search of Lost Time</h3>
+          <p>Marcel Proust · 1913</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/book2/400/280" alt="Decorative cover image for Middlemarch">
+        <div class="card-body">
+          <h3>Middlemarch</h3>
+          <p>George Eliot · 1871</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/book3/400/280" alt="Decorative cover image for Don Quixote">
+        <div class="card-body">
+          <h3>Don Quixote</h3>
+          <p>Miguel de Cervantes · 1605</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/book4/400/280" alt="Decorative cover image for The Divine Comedy">
+        <div class="card-body">
+          <h3>The Divine Comedy</h3>
+          <p>Dante Alighieri · 1320</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

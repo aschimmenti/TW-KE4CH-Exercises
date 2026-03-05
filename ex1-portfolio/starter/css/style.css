@@ -1,0 +1,78 @@
+/* =============================================
+   EXERCISE 1 — Portfolio Stylesheet
+   =============================================
+   Complete the TODOs below. You can also change
+   colors, fonts, and layout to your taste!
+   ============================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* --- TODO 1: Style the <header> ---
+   Give it a background color, padding, and make the
+   nav links appear in a horizontal row.
+*/
+header {
+  /* your styles here */
+}
+
+nav ul {
+  list-style: none;
+  /* TODO: make links horizontal (hint: display flex) */
+}
+
+nav a {
+  /* TODO: style the links — remove underline, add color */
+}
+
+/* --- TODO 2: Style the <main> area ---
+   Constrain the width and center it on the page.
+*/
+main {
+  /* TODO: max-width, margin auto, padding */
+}
+
+/* --- TODO 3: Style the hero section ---
+   The section with your photo and intro text.
+*/
+.hero {
+  /* TODO: try display: flex to put image and text side by side */
+}
+
+.hero img {
+  /* TODO: make the image round using border-radius */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* --- TODO 4: Style the <footer> ---
+   Make it sit at the bottom, center the links.
+*/
+footer {
+  /* your styles here */
+}
+
+footer ul {
+  list-style: none;
+  /* TODO: flex layout for social links */
+}
+
+/* --- Headings --- */
+h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.4rem; margin: 1.5rem 0 0.5rem; }
+
+/* --- BONUS: Add hover effects on nav links ---
+   Hint: nav a:hover { ... }
+*/

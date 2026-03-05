@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2 — CSS Layout</title>
+  <style>
+
+    /* =============================================
+       PART A — Center a div
+       =============================================
+       The box below should appear perfectly centered
+       on the page, both horizontally and vertically.
+       Complete the CSS to achieve this.
+    ============================================= */
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f0f4f8;
+      font-family: Arial, sans-serif;
+
+      /* TODO A1: Use flexbox on body to center its children
+         Hint: display, justify-content, align-items */
+    }
+
+    .centered-box {
+      width: 300px;
+      height: 200px;
+      background: #1a1a2e;
+      color: white;
+      font-size: 1.2rem;
+
+      /* TODO A2: Center the text inside the box too
+         Hint: use flexbox again, or text-align + line-height */
+    }
+
+
+    /* =============================================
+       PART B — Card Deck
+       =============================================
+       Style the .card-deck and .card elements to
+       produce a grid of cards.
+    ============================================= */
+
+    .card-deck {
+      /* TODO B1: Use flexbox or CSS grid to lay out
+         cards in a row that wraps when it runs out of space.
+         Hint: flex-wrap: wrap  OR  display: grid + grid-template-columns */
+    }
+
+    .card {
+      width: 220px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+
+      /* TODO B2: Add a box-shadow to give the card depth */
+
+      /* TODO B3: Add a smooth scale transform on hover
+         Hint: transition + transform: scale(1.03) in a :hover rule */
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1rem;
+    }
+
+    .card-body p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* TODO B4: Add a .card:hover rule */
+
+  </style>
+</head>
+<body>
+
+  <!-- PART A -->
+  <div class="centered-box">I am centered</div>
+
+  <!-- PART B — remove or comment out Part A's body flex
+       styles when you work on this section, or put the
+       card deck in its own wrapper -->
+  <!--
+  <div class="card-deck" style="padding:2rem; max-width:900px; margin:0 auto;">
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/book1/400/280" alt="Book cover">
+      <div class="card-body">
+        <h3>In Search of Lost Time</h3>
+        <p>Marcel Proust · 1913</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/book2/400/280" alt="Book cover">
+      <div class="card-body">
+        <h3>Middlemarch</h3>
+        <p>George Eliot · 1871</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/book3/400/280" alt="Book cover">
+      <div class="card-body">
+        <h3>Don Quixote</h3>
+        <p>Miguel de Cervantes · 1605</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/seed/book4/400/280" alt="Book cover">
+      <div class="card-body">
+        <h3>The Divine Comedy</h3>
+        <p>Dante Alighieri · 1320</p>
+      </div>
+    </div>
+
+  </div>
+  -->
+
+</body>
+</html>
